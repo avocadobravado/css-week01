@@ -25,6 +25,7 @@ h2 {
   word-spacing: 10px;
   font-size: 36px;
   margin: 0;
+  text-align: center;
 }
 
 a {
@@ -48,6 +49,7 @@ nav {
   background-color: #fff;
   position: fixed;
   width: 100%;
+  z-index: 1000;
 }
 
 .nav-left {
@@ -76,63 +78,68 @@ nav {
   color: white;
   padding: 30px;
   text-align: center;
+  vertical-align: middle;
 }
 
 .hero-text h1 {
-  font-size: 80px;
-  margin-top: 250px;
+  font-family: 'Smythe';
+  font-size: 150px;
+  line-height: 150px;
+  margin-top: 225px;
   margin-bottom: 0;
 }
 
 .hero-text h2 {
   text-align: center;
   font-size: 28px;
+  margin: 0;
+}
+
+.hero-text h3 {
+  margin: 0;
+  line-height: 35px;
 }
 
 .hero-text p {
   width: 60%;
-  text-align: left;
+  text-align: center;
   margin-right: auto;
   margin-left: auto;
+  margin-top: 0;
 }
 
 /*Our Story*/
 
 #ourstory {
   width: 70%;
-  margin-right: auto;
-  margin-left: auto;
-    border: 1px solid #ff0000;
+  margin: 50px auto;
+  border: 1px solid #ff0000;
 }
 
-#ourstory h2 {
-  text-align: center;
-}
-
-#ourstory .left {
+#story-left {
   float: left;
   width: 50%;
-    border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
-#ourstory .left p:first-letter {
+#story-left p {
+  line-height: 1.5em;
+}
+
+#story-left p:first-letter {
   font-size: 48px;
   font-family: 'Homemade Apple';
   line-height: 0;
 }
 
-#ourstory .left p {
-  line-height: 1.5em;
-}
-
-#ourstory .right {
+#story-right {
   float: right;
   width: 50%;
   border: 1px solid #000;
 }
 
-#ourstory .right img {
-  height: 275px;
+#story-right img {
+  height: 324px;
   display: block;
   margin: 0 auto;
   margin-top: 30px;
@@ -141,6 +148,52 @@ nav {
 }
 
 /*Subscribe*/
+
+#subscribe {
+  width: 100%;
+  margin: 50px auto;
+  text-align: center;
+  background-color: #fff;
+}
+
+#subscribe h2 {
+  line-height: 200px;
+}
+
+.columns {
+  width: 70%;
+  margin: -30px auto;
+  position: relative;
+  display: table;
+}
+
+.column {
+  display: table-cell;
+  width:32%;
+  background-color: #eee;
+}
+
+#col-left, #col-middle, #col-right {
+  padding: 10px 30px;
+}
+
+#col-right {
+
+}
+
+#col-middle {
+  position: absolute;
+  left: 50%;
+  display: inline;
+  width: 33%;
+  transform: translateX(-50%);
+}
+
+/*Contact*/
+
+/*#contact {
+  clear: both;
+}*/
 
 
 
