@@ -16,8 +16,8 @@ html, body, .hero-text{
 body {
   font-family: 'Arvo', serif;
   margin: 0;
-  color: #000;
-  background-color: #c0c0c0;
+  color: #444;
+  background-color: #fff;
   letter-spacing: 0.03em;
 }
 
@@ -27,6 +27,7 @@ h2 {
   font-size: 36px;
   margin: 0;
   text-align: center;
+  color: #617e67;
 }
 
 a {
@@ -34,7 +35,32 @@ a {
 }
 
 a:visited {
-  color: inherit;
+  color: #444;
+}
+
+button {
+ background-color: #617e67;
+ height: 50px;
+ width: 150px;
+ color: white;
+ font-size: 16px;
+ cursor: pointer;
+ font-weight: bold;
+ text-transform: uppercase;
+ letter-spacing: .16em;
+ border: none;
+ border-radius: 23px;
+ padding: 15px;
+}
+
+button:hover {
+ color: #fff;
+ background-color: #444;
+ -o-transition:.9s;
+ -ms-transition:.9s;
+ -moz-transition:.9s;
+ -webkit-transition:.9s;
+ transition:.9s;
 }
 
   /*Clearfix*/
@@ -95,6 +121,7 @@ nav {
   text-align: center;
   font-size: 28px;
   margin: 0;
+  color: #444;
 }
 
 .hero-text h3, .hero-text p {
@@ -115,37 +142,11 @@ nav {
   font-size: 1.1em;
 }
 
- button {
-  background-color: #617e67;
-  height: 50px;
-  width: 150px;
-  color: white;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-  text-transform: uppercase;
-  letter-spacing: .16em;
-  border: none;
-  border-radius: 23px;
-  padding: 15px;
-}
-
-button:hover {
-  color: #fff;
-  background-color: #444;
-  -o-transition:.9s;
-  -ms-transition:.9s;
-  -moz-transition:.9s;
-  -webkit-transition:.9s;
-  transition:.9s;
-}
-
 /*Our Story*/
 
 #ourstory {
   width: 70%;
   margin: 50px auto;
-  border: 1px solid #ff0000;
 }
 
 #story-left {
@@ -162,21 +163,24 @@ button:hover {
   font-size: 48px;
   font-family: 'Homemade Apple';
   line-height: 0;
+  color: #aa6300;
 }
 
-#story-right {
+#story-right * {
   float: right;
-  width: 50%;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
   border: 1px solid #000;
 }
 
 #story-right img {
-  height: 324px;
-  display: block;
-  margin: 0 auto;
-  margin-top: 30px;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  width: 50%;
   border-radius: 100%;
-  border: 5px solid #ff0000;
+  border: 10px solid #aa6300;;
 }
 
 /*Subscribe*/
@@ -184,12 +188,13 @@ button:hover {
 #subscribe {
   margin: 10px auto;
   text-align: center;
-  background-color: #fff;
+  background-color: rgba(163, 118, 33, 0.16);
   height: 720px;
 }
 
 #subscribe h2 {
   line-height: 200px;
+  color: #aa6300;
 }
 
 .columns {
@@ -197,12 +202,13 @@ button:hover {
   margin: -30px auto;
   position: relative;
   display: table;
+  color: #444;
 }
 
 .column {
   display: table-cell;
   width:32%;
-  background-color: #eee;
+  background-color: #fff;
 }
 
 #col-left, #col-middle, #col-right {
@@ -227,64 +233,38 @@ button:hover {
   background-color: #fff;
   width: 70%;
   margin: 50px auto;
-  border: 1px solid #ff0000;
-}
-/*
-#past-left {
-  float: left;
 }
 
-#past-right {
-  float: right;
-}
-
-#past-right img {
-  max-width: 19%;
-  margin: 2.5%;
+#past-boxes img {
+  max-width: 30%;
+  margin: 1.5%;
   vertical-align: middle;
-}*/
-
-
-#past-left {
-  float: left;
-  width: 50%;
-  border: 1px solid #fff;
+  border-radius: 100%;
 }
 
-#past-right {
-  float: right;
-  width: 50%;
-  border: 1px solid #000;
+#past-boxes img:nth-child(odd) {
+  border: 10px solid #aa6300;
 }
 
+#past-boxes img:nth-child(even) {
+  border: 10px solid #617e67;
+}
 /*Contact*/
 
 #contact {
-  background-color: #fff;
+  background-color: rgba(163, 118, 33, 0.16);
   width: 100%;
   margin: 0 auto;
-  border: 1px solid #ff0000;
+}
+
+#contact h2 {
+  color: #aa6300;
 }
 
 .two-col-contact {
   width: 70%;
   margin: 0 auto;
 }
-/*
-#past-left {
-  float: left;
-}
-
-#past-right {
-  float: right;
-}
-
-#past-right img {
-  max-width: 19%;
-  margin: 2.5%;
-  vertical-align: middle;
-}*/
-
 
 #contact-left {
   float: left;
@@ -297,6 +277,7 @@ button:hover {
   width: 50%;
   border: 1px solid #000;
 }
+
 
 
 
