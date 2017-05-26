@@ -30,6 +30,12 @@ h2 {
   color: #617e67;
 }
 
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+
 a {
   text-decoration: none;
 }
@@ -43,6 +49,7 @@ button {
  height: 50px;
  width: 150px;
  color: white;
+ font-family: 'Arvo';
  font-size: 16px;
  cursor: pointer;
  font-weight: bold;
@@ -64,35 +71,45 @@ button:hover {
 }
 
   /*Clearfix*/
-  .cf {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.cf {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*Nav*/
 
 nav {
-  background-color: #fff;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  z-index: 1000;
+  margin: 5px 30px 5px 30px;
 }
 
-.nav-left {
+nav img {
+  width: 40px;
   float: left;
+  padding: bottom: 10px;
 }
 
-.nav-right {
+nav ul {
   float: right;
 }
 
-.nav-right li {
+nav li {
+  list-style-type: none;
   display: inline-block;
+  padding-left: 30px;
   text-transform: uppercase;
-  margin: 0;
-  padding-right: 20px;
+}
+
+nav a {
+  color: #617e67;
+}
+
+nav a:visited {
+  color: #617e67;
+}
+
+nav a:hover {
+  border-bottom: 3px solid #aa6300;
 }
 
 /*Hero text*/
@@ -147,6 +164,7 @@ nav {
 #ourstory {
   width: 70%;
   margin: 50px auto;
+  position: relative;
 }
 
 #story-left {
@@ -171,7 +189,6 @@ nav {
   width: 40%;
   display: block;
   margin: 0 auto;
-  border: 1px solid #000;
 }
 
 #story-right img {
@@ -180,7 +197,15 @@ nav {
   vertical-align: middle;
   width: 50%;
   border-radius: 100%;
-  border: 10px solid #aa6300;;
+  border: 10px solid #aa6300;
+  height: 100%;
+}
+
+#caption {
+  position: absolute;
+  color: #222;
+  top: 70%;
+  left: 50%;
 }
 
 /*Subscribe*/
@@ -189,12 +214,18 @@ nav {
   margin: 10px auto;
   text-align: center;
   background-color: rgba(163, 118, 33, 0.16);
-  height: 720px;
+  height: 700px;
 }
 
 #subscribe h2 {
   line-height: 200px;
   color: #aa6300;
+}
+
+#subscribe h3 {
+  color: #617e67;
+  text-transform: uppercase;
+  border-bottom: 3px solid #aa6300;
 }
 
 .columns {
@@ -209,14 +240,11 @@ nav {
   display: table-cell;
   width:32%;
   background-color: #fff;
+  border-radius: 10px;
 }
 
 #col-left, #col-middle, #col-right {
   padding: 10px 30px;
-}
-
-#col-right {
-
 }
 
 #col-middle {
@@ -227,9 +255,23 @@ nav {
   transform: translateX(-50%);
 }
 
+#middle-button {
+  background-color: #aa6300;
+}
+
+#middle-button:hover {
+ color: #fff;
+ background-color: #444;
+ -o-transition:.9s;
+ -ms-transition:.9s;
+ -moz-transition:.9s;
+ -webkit-transition:.9s;
+ transition:.9s;
+}
+
 /*Contact*/
 
-#past {
+#testimonials {
   background-color: #fff;
   width: 70%;
   margin: 50px auto;
@@ -237,7 +279,7 @@ nav {
 
 #past-boxes img {
   max-width: 30%;
-  margin: 1.5%;
+  margin: 1.3%;
   vertical-align: middle;
   border-radius: 100%;
 }
@@ -259,37 +301,94 @@ nav {
 
 #contact h2 {
   color: #aa6300;
+  margin-top: 50px;
+  line-height: 40px;
 }
 
-.two-col-contact {
+.contact {
   width: 70%;
   margin: 0 auto;
 }
 
-#contact-left {
-  float: left;
-  width: 50%;
-  border: 1px solid #fff;
+form {
+  background-color: #fff;
+  width: 550px;
+  border-radius: 10px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  padding: 20px;
+  text-align: center;
 }
 
-#contact-right {
-  float: right;
-  width: 50%;
-  border: 1px solid #000;
+input, select, textarea, button {
+  display: block;
+  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
+input, select, textarea {
+  width: 300px;
+  font-size: 13px;
+  opacity: 0.8;
+}
 
+label {
+  color: #aa6300;
+}
 
+input, select {
+  height: 30px;
+}
 
-/*At least one centered element
-A list or summary of features (lorem ipsum is fine)
-At least one large image with an absolutely positioned caption (example)
-At least one table or form field styled with CSS (e.g. sizing chart, color options, order form…)
-A gallery of smaller images (e.g. similar products...)
-Incorporates all required elements (see above)
-Use of at least one pseudo class and one pseudo element
-Use of at least 3 different types of selectors
-Appropriate elements are positioned using absolute & relative positioning
-Gallery images make use of the float property
-DONE -- Elements use box-sizing: border-box;
-Project is in a polished, portfolio-quality state`.*/
+input:focus, textarea:focus {
+  background-color: #aa6300;
+  color: #fff;
+  font-style: normal;
+  outline: 2px solid #444;
+}
+
+select:focus {
+  font-style: normal;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder {
+    color: #fff;
+}
+
+.input-in label, .input-in input, .input-in textarea {
+    float: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#form-submit {
+  margin-top: 20px;
+}
+
+/*Social media icons*/
+
+#contact ul {
+  padding-left: 0;
+}
+
+#contact li {
+  margin-right: 15px;
+}
+
+.fa {
+  color: #aa6300;
+  margin-top: 30px;
+}
+
+.fa:hover {
+  color: #617e67;
+}
+
+.fa:visited {
+  color: #aa6300;
+}
