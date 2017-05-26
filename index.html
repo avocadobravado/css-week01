@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <!--Favicon-->
+    <link rel="icon" type="image/png" href="img/favicon.png">
+
     <!--Fonts-->
     <link href="https://fonts.googleapis.com/css?family=Arvo:400,400i,700|Homemade+Apple|Smythe" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -9,23 +12,19 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/styles.css">
 
-    <!--Scripts-->
-    <script src="https://code.jquery.com/jquery-3.2.1.js"integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
     <title>Tell-Tale Heart Box</title>
   </head>
   <body>
 
-
     <!--NAVIGATION-->
     <nav>
       <!--Left nav-->
-      <img src="img/logo.png" alt="Tell-Tale Heart Box" class="nav-left">
+      <img src="img/heart.png" alt="Tell-Tale Heart Box" class="nav-left">
       <!--Right nav-->
       <ul class="nav-right">
         <li><a href="#ourstory">Our Story</a></li>
         <li><a href="#subscribe">Subscribe</a></li>
-        <li><a href="#past">Past Boxes</a></li>
+        <li><a href="#testimonials">Past Boxes</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav><!--Nav closes-->
@@ -53,6 +52,7 @@
       </div>
       <div id="story-right">
         <img src="img/annabellee.jpg">
+        <p id="caption"><em>"All that we see or seem is but a dream within a dream."</em></p>
       </div>
     </div><!--Our story closes-->
 
@@ -62,21 +62,24 @@
       <div class="columns">
         <div id="col-left" class="column">
           <h3>Raven Box</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate nostram.</p>
+          <button type="button" class="subscribe-button">Subscribe</button>
         </div><!--Left closes-->
         <div id="col-middle" class="column">
           <h3>Lenore Box</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate nostram mensis nisi.</p>
+          <button type="button" class="subscribe-button" id="middle-button">Subscribe</button>
         </div><!--Middle closess-->
         <div id="col-right" class="column">
           <h3>Annabel Lee Box</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate nostram.</p>
+          <button type="button" class="subscribe-button">Subscribe</button>
         </div><!--Right closes-->
       </div><!--Columns closes-->
     </div><!--Subscribe closes-->
 
     <!--PAST BOXES-->
-    <div class="cf" id="past">
+    <div class="cf" id="testimonials">
       <h2>Past Boxes</h2>
       <div id="past-boxes">
         <img src="img/box01.jpg" alt="Previous box">
@@ -95,21 +98,35 @@
 
     <!--CONTACT-->
     <div class="cf" id="contact">
-      <div class="two-col-contact">
-        <div id="contact-left">
-          <ul>
-            <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter fa-2x"></i></a></li>
-            <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-instagram fa-2x"></i></a></li>
-            <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-facebook fa-2x"></i></a></li>
-            <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-dribbble fa-2x"></i></a></li>
-            <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-envelope-o fa-2x"></i></a></li>
-          </ul>
-        </div>
-        <div id="contact-right">
+      <div class="contact">
           <h2>Contact us</h2>
-          <p>It was many and many a year ago, in a kingdom by the sea, that a maiden there lived who you may know by the name of Annabel Lee. As Annabel Lee grew, she developed a taste shared only by a few. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-        </div>
-      </div>
-    </div><!--Contact closes-->
+          <form>
+            <div class="input-in">
+              <label for="name">Name:</label>
+              <input type="text" id="name" placeholder="What shall we call you?" />
+            </div>
+
+            <div class="input-in">
+              <label for="email">Email:</label>
+              <input type="email" id="email" placeholder="Where can we reach you?" />
+            </div>
+
+            <div class="input-in">
+              <label for="message">Memo:</label>
+              <textarea id="message" placeholder="How may we help you?"></textarea>
+            </div>
+            <button type="submit" id="form-submit">Submit</button>
+
+              <ul>
+               <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-twitter fa-2x"></i></a></li>
+               <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-instagram fa-2x"></i></a></li>
+               <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-facebook fa-2x"></i></a></li>
+               <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-dribbble fa-2x"></i></a></li>
+               <li><a class="nav-link" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><i class="fa fa-envelope-o fa-2x"></i></a></li>
+             </ul>
+           </form>
+           <ul>
+        </div><!--Contact class close-->
+    </div><!--Contact id close-->
   </body>
 </html>
