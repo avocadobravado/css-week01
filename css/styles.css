@@ -1,0 +1,88 @@
+/*Global Styles*/
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arvo', serif;
+  margin: 0;
+  background-color: #c0c0c0;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: inherit;
+}
+
+  /*Clearfix*/
+  .cf {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+/*Top Area*/
+
+.top {
+  background: url('../img/background.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: white;
+  padding: 30px;
+}
+
+  /*Nav*/
+
+.nav-left {
+  float: left;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-right li {
+  display: inline-block;
+  text-transform: uppercase;
+  margin: 0;
+  padding-right: 20px;
+}
+
+
+  /*Hero text*/
+
+  .hero-text {
+    text-align: center;
+  }
+
+.hero-text h1 {
+  font-size: 64px;
+  margin-top: 150px;
+  margin-bottom: 0;
+}
+
+
+
+/*At least one centered element
+A list or summary of features (lorem ipsum is fine)
+At least one large image with an absolutely positioned caption (example)
+At least one table or form field styled with CSS (e.g. sizing chart, color options, order form…)
+A gallery of smaller images (e.g. similar products...)
+Incorporates all required elements (see above)
+Use of at least one pseudo class and one pseudo element
+Use of at least 3 different types of selectors
+Appropriate elements are positioned using absolute & relative positioning
+Gallery images make use of the float property
+DONE -- Elements use box-sizing: border-box;
+Project is in a polished, portfolio-quality state`.*/
