@@ -57,7 +57,8 @@ button {
  letter-spacing: .16em;
  border: none;
  border-radius: 23px;
- padding: 15px;
+ line-height: 16px;
+ padding-top: 5px;
 }
 
 button:hover {
@@ -102,15 +103,22 @@ nav li {
 
 nav a {
   color: #617e67;
+  opacity:1;
+  /*position: relative;
+  z-index: 5;*/
 }
 
 nav a:visited {
   color: #617e67;
 }
 
-nav a:hover {
-  border-bottom: 3px solid #aa6300;
-}
+nav li:hover {
+   height: 28px;
+   background-image:url('../img/heart_hover.png') ;
+   background-repeat:no-repeat;
+   background-size: 20px 30px;
+   background-position: 65px 0px;
+   }
 
 /*Hero text*/
 
@@ -170,7 +178,7 @@ nav a:hover {
 #story-left {
   float: left;
   width: 50%;
-  border: 1px solid #fff;
+  padding-right: 5px;
 }
 
 #story-left p {
@@ -186,7 +194,6 @@ nav a:hover {
 
 #story-right * {
   float: right;
-  width: 40%;
   display: block;
   margin: 0 auto;
 }
@@ -205,20 +212,22 @@ nav a:hover {
   position: absolute;
   color: #222;
   top: 70%;
-  left: 50%;
+  left: 70%;
+  text-align: right;
+  width: 20%;
 }
 
 /*Subscribe*/
 
 #subscribe {
-  margin: 10px auto;
+  margin: 0 auto;
+  padding-top: 80px;
   text-align: center;
   background-color: rgba(163, 118, 33, 0.16);
-  height: 700px;
 }
 
 #subscribe h2 {
-  line-height: 200px;
+  line-height: 0px;
   color: #aa6300;
 }
 
@@ -230,7 +239,7 @@ nav a:hover {
 
 .columns {
   width: 70%;
-  margin: -30px auto;
+  margin: 0 auto;
   position: relative;
   display: table;
   color: #444;
@@ -238,21 +247,19 @@ nav a:hover {
 
 .column {
   display: table-cell;
+  float: left;
   width:32%;
   background-color: #fff;
   border-radius: 10px;
+  margin: 50px 4px;
 }
 
 #col-left, #col-middle, #col-right {
   padding: 10px 30px;
 }
 
-#col-middle {
-  position: absolute;
-  left: 50%;
-  display: inline;
-  width: 33%;
-  transform: translateX(-50%);
+.column button {
+  width: 80%;
 }
 
 #middle-button {
@@ -272,7 +279,6 @@ nav a:hover {
 /*Contact*/
 
 #testimonials {
-  background-color: #fff;
   width: 70%;
   margin: 50px auto;
 }
@@ -314,11 +320,8 @@ form {
   background-color: #fff;
   width: 550px;
   border-radius: 10px;
-  margin-right: auto;
-  margin-left: auto;
-  margin-top: 30px;
-  margin-bottom: 50px;
-  padding: 20px;
+  margin: 30px auto 50px auto;
+  padding: 30px 0 20px 0;
   text-align: center;
 }
 
