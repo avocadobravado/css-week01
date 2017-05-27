@@ -18,6 +18,15 @@ OR...
 
 * View on gh-pages at [http://avocadobravado.github.io/css-week01](http://avocadobravado.github.io/css-week01)
 
+## Screenshots of Application
+
+![screenshot of Tell-Tale Heart Box](https://github.com/avocadobravado/css-week01/blob/master/img/scs-01.png?raw=true)
+
+![screenshot of Tell-Tale Heart Box](https://github.com/avocadobravado/css-week01/blob/master/img/scs-02.png?raw=true)
+
+![screenshot of Tell-Tale Heart Box](https://github.com/avocadobravado/css-week01/blob/master/img/scs-03.png?raw=true)
+
+
 ## How to Use
 
 * Open index.html in a web browser such as Google Chrome
