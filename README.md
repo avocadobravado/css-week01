@@ -20,8 +20,7 @@ OR...
 
 ## How to Use
 
-* Open index.html
-* Enter your name, address, and pizza options to order a pizza
+* Open index.html in a web browser such as Google Chrome
 
 ## Known Bugs
 
