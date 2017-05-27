@@ -25,7 +25,6 @@ OR...
 ## Known Bugs
 
 * Website is NOT responsive, looks best on 13" laptop
-* Columns in Subscription area will overlap with the below div if a fixed height is not set
 
 ## Support and contact details
 
