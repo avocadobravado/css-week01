@@ -16,7 +16,7 @@ This website showcases a product for sale, an Edgar Allan Poe-inspired subscript
 
 OR...
 
-* View on gh-pages at [http://avocadobravado.github.io/css-week04](http://avocadobravado.github.io/css-week01)
+* View on gh-pages at [http://avocadobravado.github.io/css-week01](http://avocadobravado.github.io/css-week01)
 
 ## How to Use
 
