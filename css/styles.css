@@ -35,7 +35,6 @@ li {
   display: inline-block;
 }
 
-
 a {
   text-decoration: none;
 }
@@ -84,10 +83,35 @@ nav {
   margin: 5px 30px 5px 30px;
 }
 
+.left-nav {
+  float: left;
+  padding-bottom: 5px;
+}
+
 nav img {
   width: 40px;
-  float: left;
   padding: bottom: 10px;
+}
+
+nav h3 {
+  float: right;
+  margin-left: 20px;
+  font-family: 'Smythe';
+  font-size: 30px;
+  line-height: 0;
+}
+
+.title {
+  color: #aa6300;
+}
+
+.title:hover {
+  color: #444;
+  -o-transition:.9s;
+  -ms-transition:.9s;
+  -moz-transition:.9s;
+  -webkit-transition:.9s;
+  transition:.9s;
 }
 
 nav ul {
@@ -97,15 +121,14 @@ nav ul {
 nav li {
   list-style-type: none;
   display: inline-block;
+  margin-top: 9px;
   padding-left: 30px;
   text-transform: uppercase;
 }
 
 nav a {
   color: #617e67;
-  opacity:1;
-  /*position: relative;
-  z-index: 5;*/
+  opacity: 1;
 }
 
 nav a:visited {
@@ -138,15 +161,16 @@ nav li:hover {
   font-family: 'Smythe';
   font-size: 150px;
   line-height: 150px;
-  margin-top: 225px;
+  margin-top: 200px;
   margin-bottom: 0;
+  text-shadow: 1px 1px 1px #111;
 }
 
 .hero-text h2 {
   text-align: center;
   font-size: 28px;
   margin: 0;
-  color: #444;
+  color: #333;
 }
 
 .hero-text h3, .hero-text p {
@@ -297,6 +321,7 @@ nav li:hover {
 #past-boxes img:nth-child(even) {
   border: 10px solid #617e67;
 }
+
 /*Contact*/
 
 #contact {
