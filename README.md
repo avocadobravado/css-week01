@@ -6,7 +6,7 @@
 
 ## Description
 
-This website showcases a product for sale, an Edgar Allan Poe-inspired subscription box. With this assignment, I practiced with centering elements, relative and absolute positioning, use of the float property, and various pseudo elements and pseudo selectors.
+This website showcases a product for sale, an Edgar Allan Poe-inspired subscription box. With this assignment, I used various methods for centering elements, added relative and absolute positioning, made use of the float property, and implemented various pseudo elements and pseudo selectors.
 
 ## Setup/Installation Requirements
 
@@ -55,8 +55,8 @@ OR...
 
 ## Acknowledgments
 
-* Woman illustration: [https://www.oldbookillustrations.com/illustrations/maiden-magic-wand/](https://www.oldbookillustrations.com/illustrations/maiden-magic-wand/)
-* Background illustration: [https://www.oldbookillustrations.com/illustrations/flitting-ghosts/](https://www.oldbookillustrations.com/illustrations/flitting-ghosts/)
+* **Woman illustration**: [https://www.oldbookillustrations.com/illustrations/maiden-magic-wand/](https://www.oldbookillustrations.com/illustrations/maiden-magic-wand/)
+* **Background illustration**: [https://www.oldbookillustrations.com/illustrations/flitting-ghosts/](https://www.oldbookillustrations.com/illustrations/flitting-ghosts/)
 
 ## License
 
